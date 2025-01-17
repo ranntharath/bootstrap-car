@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="footer.css" />
+    <style>
+      .image-zoom:hover {
+        transform: scale(1.02);
+        transition: transform 0.3s ease;
+      }
+      .btn {
+        background-color: rgb(235, 233, 233);
+        color: gray;
+      }
+      .line-clamp-2 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+      .line-clamp-1 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+      }
+      .rent-btn {
+        border: 2px solid brown;
+        background-color: white;
+        color: brown;
+      }
+      .rent-btn:hover {
+        background-color: brown;
+        color: white;
+      }
+      .btn-recommend {
+        background-color: white;
+        border: 2px solid rgb(255, 168, 107);
+        border-radius: 5px;
+        color: rgb(255, 168, 107);
+      }
+      .btn-recommend:hover {
+        background-color: rgb(255, 168, 107);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container">
+          <a class="navbar-brand text-white fs-2" href="#">LIMO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="car-signle.html">CAR SINGLE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="about.html">ABOUT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div
+          class="text-center d-flex justify-content-center flex-column"
+          style="
+            background-image: url('https://demo.templatesjungle.com/limo/images/Bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 700px;
+          "
+        >
+          <h1 class="text-white fs-1">FIND YOUR CARS & LIMOUSINE</h1>
+          <p class="text-white fs-5">
+            We have many best rental car collections.
+          </p>
+          <form
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-4 px-5 justify-content-center mt-4 text-light text-start g-3"
+          >
+            <div class="col">
+              <div class="d-flex flex-column p-0">
+                <label for="vehicle" class="my-2">Vehicle type</label>
+                <input
+                  type="text"
+                  id="vehicle"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                  placeholder="Vehicle type"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex flex-column p-0">
+                <label class="my-2" for="location">Picking up location</label>
+                <input
+                  type="text"
+                  id="location"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                  placeholder="Airport or anywhere"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex flex-column p-0">
+                <label class="my-2" for="up-date">Picking up date</label>
+                <input
+                  type="date"
+                  id="up-date"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex flex-column p-0">
+                <label class="my-2 w-100" for="return-date"
+                  >Returning date</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </div>
+            </div>
+
+            <div class="col w-100">
+              <button
+                type="button"
+                class="py-2 rounded-3 bg-warning mt-4 w-100 text-light"
+              >
+                FIND YOUR CAR
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="bg-light p-5">
+        <div class="container">
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-4 px-5 justify-content-center mt-5"
+          >
+            <div class="col">
+              <h4 class="fst-italic text-secondary">01</h4>
+              <p class="fw-bold">Choose a vehicle</p>
+              <p class="text-secondary text-wrap">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="col">
+              <h4 class="fst-italic text-secondary">02</h4>
+              <p class="fw-bold">Pick location & date</p>
+              <p class="text-secondary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="col">
+              <h4 class="fst-italic text-secondary">03</h4>
+              <p class="fw-bold">Book your car</p>
+              <p class="text-secondary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="col">
+              <h4 class="fst-italic text-secondary">04</h4>
+              <p class="fw-bold">Finish process</p>
+              <p class="text-secondary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="card" class="mt-5">
+        <h2 class="text-uppercase text-center text-dark fw-bold fs-2">
+          great cars rental &amp; Limousine Services
+        </h2>
+        <div class="container mt-5">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <article class="col">
+              <img
+                class="w-100 rounded-2 image-zoom"
+                style="max-width: 100%; height: 250px; object-fit: cover"
+                src="https://www.spinny.com/blog/wp-content/uploads/2024/10/Spinny-2024-Hyundai-Creta.webp"
+                alt="hyundai"
+              />
+              <p class="fs-2 text-center fw-bold">Hyundai</p>
+            </article>
+            <article class="col">
+              <img
+                class="w-100 rounded-2 image-zoom"
+                style="max-width: 100%; height: 250px; object-fit: cover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtNQgwJAyZq1-42XBDfd1zxsGpSAksST_37w&s"
+                alt="jeep"
+              />
+              <p class="fs-2 text-center fw-bold">JEEP</p>
+            </article>
+            <article class="col">
+              <img
+                class="w-100 rounded-2 image-zoom"
+                style="max-width: 100%; height: 250px; object-fit: cover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjY5AWVXWdJSBem2yMD-FyaZo9w9lL8Q1Vw&s"
+                alt="bmw"
+              />
+              <p class="fs-2 text-center fw-bold">BMW</p>
+            </article>
+            <article class="col">
+              <img
+                class="w-100 rounded-2 image-zoom"
+                style="max-width: 100%; height: 250px; object-fit: cover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTda9CejDs_PtVY6i2noyVE8RVMuTUmgIXyvA&s"
+                alt="Benz"
+              />
+              <p class="fs-2 text-center fw-bold">Benz</p>
+            </article>
+            <article class="col">
+              <img
+                class="w-100 rounded-2 image-zoom"
+                style="max-width: 100%; height: 250px; object-fit: cover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGYgPGHqjyjwWmDw0yw0Nd1EHb8qCbt_HL2xxtF8agrlLZB02H2DMgR1gCQKlOhG0rM-4&usqp=CAUhttps://a.storyblok.com/f/143588/2100x1401/75e81a6d1a/2016fordkuga_vignale_03.jpg/m/filters:quality(80)"
+                alt="ford"
+              />
+              <p class="fs-2 text-center fw-bold">FORD</p>
+            </article>
+            <article class="col">
+              <img
+                class="w-100 rounded-2 image-zoom"
+                style="max-width: 100%; height: 250px; object-fit: cover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3MHRJCP28xeqzIiBR7DhZzhzNNMA0hXLnKw&s"
+                alt="range-rover"
+              />
+              <p class="fs-2 text-center fw-bold">Range Rover</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="mt-5 bg-light p-5">
+        <h2 class="text-uppercase text-center text-dark fw-bold fs-2">
+          find by type
+        </h2>
+        <div class="text-center mt-4">
+          <button type="button" class="btn btn-secondary px-4 py-1 mx-1">
+            All
+          </button>
+          <button type="button" class="btn btn-secondary px-4 py-1 mx-1">
+            Coupe
+          </button>
+          <button type="button" class="btn btn-secondary px-4 py-1 mx-1">
+            Sedan
+          </button>
+          <button type="button" class="btn btn-secondary px-4 py-1 mx-1">
+            Suv
+          </button>
+        </div>
+        <div class="container mt-3">
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4 g-4"
+          >
+            <div class="col">
+              <article class="border rounded-2">
+                <img
+                  class="w-100 rounded-top-2"
+                  style="max-width: 100%; height: 200px; object-fit: cover"
+                  src="	https://news.dupontregistry.com/wp-content/uploads/2024/01/21c_lightroom_1920p.jpeg"
+                  alt="Czinger-21C"
+                />
+                <div class="p-3">
+                  <h3 class="line-clamp-1">Czinger 21C</h3>
+                  <p>Starts from <span class="fw-bold">29$/day</span></p>
+                  <p class="line-clamp-2 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eius ipsa ratione accusantium quam recusandae, eligendi
+                    similique et consequatur laborum facilis!
+                  </p>
+                  <button class="rent-btn rounded-5 py-2 px-4 border-2">
+                    RENT NOW
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="border rounded-2">
+                <img
+                  class="w-100 rounded-top-2"
+                  style="max-width: 100%; height: 200px; object-fit: cover"
+                  src="https://news.dupontregistry.com/wp-content/uploads/2024/01/630e565cc53d0aea9a1032c9_Striker_Red-1140x641.jpeg"
+                  alt="SSC-Tuatara"
+                />
+                <div class="p-3">
+                  <h3 class="line-clamp-1">SSC TUATARA</h3>
+                  <p>Starts from <span class="fw-bold">29$/day</span></p>
+                  <p class="line-clamp-2 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eius ipsa ratione accusantium quam recusandae, eligendi
+                    similique et consequatur laborum facilis!
+                  </p>
+                  <button class="rent-btn rounded-5 py-2 px-4 border-2">
+                    RENT NOW
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="border rounded-2">
+                <img
+                  class="w-100 rounded-top-2"
+                  style="max-width: 100%; height: 200px; object-fit: cover"
+                  src="https://news.dupontregistry.com/wp-content/uploads/2024/01/2022-Ford-GT-Holman-Moody-Heritage-Edition_01-1140x567.jpg"
+                  alt="Ford GT"
+                />
+                <div class="p-3">
+                  <h3 class="line-clamp-1">FORD GT</h3>
+                  <p>Starts from <span class="fw-bold">29$/day</span></p>
+                  <p class="line-clamp-2 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eius ipsa ratione accusantium quam recusandae, eligendi
+                    similique et consequatur laborum facilis!
+                  </p>
+                  <button class="rent-btn rounded-5 py-2 px-4 border-2">
+                    RENT NOW
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="border rounded-2">
+                <img
+                  class="w-100 rounded-top-2"
+                  style="max-width: 100%; height: 200px; object-fit: cover"
+                  src="https://news.dupontregistry.com/wp-content/uploads/2024/01/DG017_001VP-1140x498.jpg"
+                  alt="Dodge-Viper-ACR"
+                />
+                <div class="p-3">
+                  <h3 class="line-clamp-1">DODGE VIPER ACR</h3>
+                  <p>Starts from <span class="fw-bold">29$/day</span></p>
+                  <p class="line-clamp-2 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eius ipsa ratione accusantium quam recusandae, eligendi
+                    similique et consequatur laborum facilis!
+                  </p>
+                  <button class="rent-btn rounded-5 py-2 px-4 border-2">
+                    RENT NOW
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="border rounded-2">
+                <img
+                  class="w-100 rounded-top-2"
+                  style="max-width: 100%; height: 200px; object-fit: cover"
+                  src="	https://news.dupontregistry.com/wp-content/uploads/2024/01/GTR-1-front-3-4-II.jpeg"
+                  alt="ESPERANTE"
+                />
+                <div class="p-3">
+                  <h3 class="line-clamp-1">ESPERANTE GTR-1</h3>
+                  <p>Starts from <span class="fw-bold">29$/day</span></p>
+                  <p class="line-clamp-2 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eius ipsa ratione accusantium quam recusandae, eligendi
+                    similique et consequatur laborum facilis!
+                  </p>
+                  <button class="rent-btn rounded-5 py-2 px-4 border-2">
+                    RENT NOW
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="border rounded-2">
+                <img
+                  class="w-100 rounded-top-2"
+                  style="max-width: 100%; height: 200px; object-fit: cover"
+                  src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_02_m.jpg"
+                  alt="lamborghini"
+                />
+                <div class="p-3">
+                  <h3 class="line-clamp-1">LAMBORGHINI</h3>
+                  <p>Starts from <span class="fw-bold">29$/day</span></p>
+                  <p class="line-clamp-2 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eius ipsa ratione accusantium quam recusandae, eligendi
+                    similique et consequatur laborum facilis!
+                  </p>
+                  <button class="rent-btn rounded-5 py-2 px-4 border-2">
+                    RENT NOW
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="border rounded-2">
+                <img
+                  class="w-100 rounded-top-2"
+                  style="max-width: 100%; height: 200px; object-fit: cover"
+                  src="https://news.dupontregistry.com/wp-content/uploads/2024/01/Vector_W8_Twin_Turbo_16760279380-1140x755.jpeg"
+                  alt="Vector-W8"
+                />
+                <div class="p-3">
+                  <h3 class="line-clamp-1">VECTOR W8</h3>
+                  <p>Starts from <span class="fw-bold">29$/day</span></p>
+                  <p class="line-clamp-2 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eius ipsa ratione accusantium quam recusandae, eligendi
+                    similique et consequatur laborum facilis!
+                  </p>
+                  <button class="rent-btn rounded-5 py-2 px-4 border-2">
+                    RENT NOW
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="border rounded-2">
+                <img
+                  class="w-100 rounded-top-2"
+                  style="max-width: 100%; height: 200px; object-fit: cover"
+                  src="https://news.dupontregistry.com/wp-content/uploads/2024/10/Hennessey-Main.jpg"
+                  alt="tesla"
+                />
+                <div class="p-3">
+                  <h3 class="line-clamp-1">HENNESSEY VENOM</h3>
+                  <p>Starts from <span class="fw-bold">29$/day</span></p>
+                  <p class="line-clamp-2 text-secondary">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eius ipsa ratione accusantium quam recusandae, eligendi
+                    similique et consequatur laborum facilis!
+                  </p>
+                  <button class="rent-btn rounded-5 py-2 px-4 border-2">
+                    RENT NOW
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card text-bg-dark">
+          <img
+            style="max-width: 100%; height: 600px; object-fit: cover"
+            src="https://demo.templatesjungle.com/limo/images/contact.jpg"
+            class="card-img"
+            alt="contact"
+          />
+          <div
+            class="card-img-overlay hero-content text-center position-absolute d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="container">
+              <h2 class="card-title fs-2">CONTACT INFO</h2>
+              <p class="card-text mt-4">
+                Nisi maecenas fermentum neque isi maecenas fermentum
+                nequeaecenas fermentum neque isi maecenas fermentum neque
+                aecenas fermentum neque isi maecenas fermentum neque.
+              </p>
+              <a href="#" class="text-light fw-bold mt-4 fs-5 d-block"
+                >Call us (99) 124 1242 12</a
+              >
+              <button
+                type="button"
+                class="btn btn-outline-warning mt-5 w-50 w-md-25"
+              >
+                CONTACT US
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-5">
+        <h2 class="fs-2 text-center mt-5">SAVE BY CHOOSING THE BEST PLAN</h2>
+        <div class="container mt-5">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <article class="col">
+              <div
+                class="text-center fs-5 d-flex flex-column justify-content-between align-items-center border rounded-2 h-100 p-3"
+              >
+                <p class="text-dark fw-bold">ESSENTIAL</p>
+                <p class="fs-3 fw-bold">$350.70</p>
+                <p>✓ Quisque rhoncus</p>
+                <p>✓ Lorem ipsum dolor</p>
+                <p>✓ Vivamus velit mir</p>
+                <p>✓ Velit mir</p>
+                <p>✓ Elit mir ivamus</p>
+                <button type="button" class="btn btn-light w-75 w-md-25">
+                  CHOOSE PLAN
+                </button>
+              </div>
+            </article>
+            <article class="col">
+              <div
+                style="margin-top: -10px"
+                class="text-center fs-5 d-flex flex-column justify-content-between align-items-center border rounded-2 h-100 p-3"
+              >
+                <p class="text-dark fw-bold">RECOMMENDED</p>
+                <p class="fs-3 fw-bold">$350.70</p>
+                <p>✓ Quisque rhoncus</p>
+                <p>✓ Lorem ipsum dolor</p>
+                <p>✓ Vivamus velit mir</p>
+                <p>✓ Elit mir ivamus</p>
+                <p>✓ Lorem ipsum dolor</p>
+                <p>✓ Ipsum dolor</p>
+                <button type="button" class="btn-recommend w-100 w-md-50">
+                  CHOOSE PLAN
+                </button>
+              </div>
+            </article>
+            <article class="col">
+              <div
+                class="text-center fs-5 d-flex flex-column justify-content-between align-items-center border rounded-2 h-100 p-3"
+              >
+                <p class="text-dark fw-bold">PRO</p>
+                <p class="fs-3 fw-bold">$350.70</p>
+                <p>✓ Quisque rhoncus</p>
+                <p>✓ Lorem ipsum dolor</p>
+                <p>✓ Vivamus velit mir</p>
+                <p>✓ Velit mir</p>
+                <p>✓ Quisque rhoncusr</p>
+                <p>✓ lit mir iamus</p>
+                <p>✓ Elit mir ivamus</p>
+                <button type="button" class="btn btn-light w-75 w-md-25">
+                  CHOOSE PLAN
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <footer class="footer mt-5">
+        <div class="container">
+          <div class="row text-center text-md-start">
+            <div class="col-md-4 mb-4">
+              <h5 class="mb-3">LIMO</h5>
+              <p>
+                Vel non nibh vestibulum massa ullam corper bib endum ultrices
+                venenatis, id id sed mass.
+              </p>
+            </div>
+            <!-- Contact-->
+            <div class="col-md-4 mb-4">
+              <h5 class="mb-3">CONTACT INFO</h5>
+              <p>State Road 54 Trinity, Florida</p>
+              <p>Call: 666 333 9999</p>
+              <p>8:00-18:00, Sat: Closed</p>
+            </div>
+            <!-- Newsletter -->
+            <div class="col-md-4 mb-4">
+              <h5 class="mb-3">SUBSCRIBE OUR NEWSLETTER</h5>
+              <p>
+                Vel non nibh vestibulum massa ullam corper bib endum ultrices
+                venenatis, id id sed mass.
+              </p>
+              <form class="d-flex">
+                <input
+                  type="email"
+                  class="form-control me-2"
+                  placeholder="Enter your email"
+                />
+                <button class="btn btn-warning" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <!-- Footer Bottom -->
+          <div class="text-center mt-4">
+            <p>
+              ©Limo, All rights reserved - Template design by
+              <a href="#">TemplatesJungle</a>
+            </p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="index.html">HOME</a></li>
+              <li class="list-inline-item"><a href="car-signle.html">CAR SINGLE</a></li>
+              <li class="list-inline-item"><a href="about.html">ABOUT</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
